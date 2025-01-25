@@ -93,6 +93,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, ShoppingBag } from 'lucide-react';
 
+
 const menuItems = [
   {
     category: 'Appetizers',
@@ -113,13 +114,13 @@ const menuItems = [
         name: 'Foie Gras',
         description: 'Pan-seared foie gras with brioche and fig jam',
         price: '$24',
-        image: 'https://images.unsplash.com/photo-1508471349025-5246e0fbccc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       },
       {
         name: 'Oysters Rockefeller',
         description: 'Baked oysters with spinach and hollandaise',
         price: '$22',
-        image: 'https://images.unsplash.com/photo-1632699890072-8a14de9f8ea7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       }
     ]
   },
@@ -130,25 +131,25 @@ const menuItems = [
         name: 'Wagyu Ribeye',
         description: 'Grade A5 Japanese Wagyu with roasted vegetables',
         price: '$85',
-        image: 'https://images.unsplash.com/photo-1546833998-877b37c2e604?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       },
       {
         name: 'Lobster Thermidor',
         description: 'Whole lobster with brandy cream sauce',
         price: '$75',
-        image: 'https://images.unsplash.com/photo-1553247407-23251ce81f59?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       },
       {
         name: 'Duck Confit',
         description: 'Classic French duck confit with pommes sarladaises',
         price: '$45',
-        image: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       },
       {
         name: 'Sea Bass',
         description: 'Pan-seared sea bass with saffron risotto',
         price: '$52',
-        image: 'https://images.unsplash.com/photo-1534043464124-3be32fe000c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       }
     ]
   },
@@ -159,25 +160,25 @@ const menuItems = [
         name: 'Truffle Pasta',
         description: 'Fresh tagliatelle with black truffle shavings',
         price: '$55',
-        image: 'https://images.unsplash.com/photo-1556760544-74068565f05c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       },
       {
         name: 'Lobster Risotto',
         description: 'Carnaroli risotto with fresh Maine lobster',
         price: '$48',
-        image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       },
       {
         name: 'Seafood Linguine',
         description: 'Mixed seafood in white wine and garlic sauce',
         price: '$42',
-        image: 'https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       },
       {
         name: 'Wild Mushroom Risotto',
         description: 'Creamy risotto with seasonal wild mushrooms',
         price: '$38',
-        image: 'https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       }
     ]
   },
@@ -188,25 +189,25 @@ const menuItems = [
         name: 'Crème Brûlée',
         description: 'Classic vanilla bean crème brûlée',
         price: '$14',
-        image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       },
       {
         name: 'Chocolate Soufflé',
         description: 'Warm chocolate soufflé with vanilla ice cream',
         price: '$16',
-        image: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       },
       {
         name: 'Opera Cake',
         description: 'Layers of almond sponge, coffee buttercream, and chocolate',
         price: '$15',
-        image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       },
       {
         name: 'Fruit Tart',
         description: 'Seasonal fruits on vanilla pastry cream',
         price: '$13',
-        image: 'https://images.unsplash.com/photo-1488477304112-4944851de03d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
       }
     ]
   }
@@ -303,6 +304,7 @@ const Menu = () => {
                   <p className="text-lg mb-2">{dish.description}</p>
                   <div className="flex items-center justify-between">
                     <p className="text-2xl font-bold text-amber-400">{dish.price}</p>
+                    <a href="https://scanme-scanme.gofastapi.com/?table_num=0">
                     <button
                       onClick={() => handleOrder(dish.name, dish.price)}
                       className="flex items-center space-x-2 bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-full transform hover:scale-105 transition-all duration-300"
@@ -310,6 +312,7 @@ const Menu = () => {
                       <ShoppingBag size={20} />
                       <span>Order Now</span>
                     </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -378,13 +381,16 @@ const Menu = () => {
                   <p className="mb-2">{item.description}</p>
                   <div className="flex items-center justify-between mt-4">
                     <p className="text-xl font-bold text-amber-400">{item.price}</p>
-                    <button
-                      onClick={() => handleOrder(item.name, item.price)}
-                      className="flex items-center space-x-2 bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-full transform hover:scale-105 transition-all duration-300"
-                    >
-                      <ShoppingBag size={20} />
-                      <span>Order Now</span>
-                    </button>
+                      <a href="https://scanme-scanme.gofastapi.com/?table_num=0">
+  <button
+    onClick={() => handleOrder(item.name, item.price)}
+    className="flex items-center space-x-2 bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-full transform hover:scale-105 transition-all duration-300"
+  >
+    <ShoppingBag size={20} />
+    <span>Order Now</span>
+  </button>
+</a>
+
                   </div>
                 </div>
               </div>

@@ -6,8 +6,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-function App() {
-  const [loading, setLoading] = useState(true);
+const App: React.FC = () => {
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     // Simulate loading time
