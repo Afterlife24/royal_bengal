@@ -29,23 +29,26 @@ const Hero = () => {
         <p className="text-xl md:text-2xl text-white mb-8 opacity-0 animate-slide-up">
           Experience the Taste of Excellence
         </p>
-        <button 
-  onClick={() => document.getElementById('reservations')?.scrollIntoView({ behavior: 'smooth' })}
-  className="bg-amber-600 text-white px-8 py-3 rounded-full text-lg font-semibold
-    hover:bg-amber-700 transform hover:scale-105 transition-all duration-300
-    opacity-0 animate-fade-in-delay mr-5"
->
-  Reserve a Table
-</button>
+        <div className="flex flex-wrap justify-center gap-4">
+  <button 
+    onClick={() => document.getElementById('reservations')?.scrollIntoView({ behavior: 'smooth' })}
+    className="bg-amber-600 text-white px-8 py-3 rounded-full text-lg font-semibold
+      hover:bg-amber-700 transform hover:scale-105 transition-all duration-300
+      opacity-0 animate-fade-in-delay"
+  >
+    Reserve a Table
+  </button>
 
-<button 
-  onClick={() => document.getElementById('reservations')?.scrollIntoView({ behavior: 'smooth' })}
-  className="bg-amber-600 text-white px-8 py-3 rounded-full text-lg font-semibold
-    hover:bg-amber-700 transform hover:scale-105 transition-all duration-300
-    opacity-0 animate-fade-in-delay"
->
-  Place a Order
-</button> 
+  <button 
+    onClick={() => document.getElementById('reservations')?.scrollIntoView({ behavior: 'smooth' })}
+    className="bg-amber-600 text-white px-8 py-3 rounded-full text-lg font-semibold
+      hover:bg-amber-700 transform hover:scale-105 transition-all duration-300
+      opacity-0 animate-fade-in-delay"
+  >
+    Place a Order
+  </button> 
+</div>
+
 
       </div>
     </section>
