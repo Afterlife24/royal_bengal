@@ -90,8 +90,6 @@
 // };
 
 // export default Menu;
-
-
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, ShoppingBag } from 'lucide-react';
 
