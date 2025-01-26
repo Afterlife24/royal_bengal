@@ -32,6 +32,14 @@ const App: React.FC = () => {
       <About />
       <Contact />
       <Footer />
+
+      {/* Floating Image */}
+      <img 
+  src="/src/scan-me.png" 
+  alt="Floating Icon"
+  className="fixed bottom-4 right-4 w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain shadow-lg rounded-[8px]"
+/>
+
     </div>
   );
 }
