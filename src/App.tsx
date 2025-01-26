@@ -5,6 +5,7 @@ import Menu from './components/Menu';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import scanMeIcon from './assets/scan-me.png';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -35,7 +36,7 @@ const App: React.FC = () => {
 
       {/* Floating Image */}
       <img 
-  src="./scan-me.png" 
+  src={scanMeIcon}
   alt="Floating Icon"
   className="fixed bottom-4 right-4 w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain shadow-lg rounded-[8px]"
 />

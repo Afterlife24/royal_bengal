@@ -44,7 +44,7 @@ const Navbar = () => {
                   isScrolled ? 'text-black' : 'text-white'
                 }`}
               >
-                Saveur
+                RoyalBengal
               </span>
             </div>
           </div>
